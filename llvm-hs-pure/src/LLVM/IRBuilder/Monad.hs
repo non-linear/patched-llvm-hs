@@ -12,6 +12,7 @@ module LLVM.IRBuilder.Monad where
 import LLVM.Prelude
 
 import Control.Monad.Cont
+import Control.Monad.Fix
 import Control.Monad.Except
 import qualified Control.Monad.Fail as Fail
 import Control.Monad.Identity
