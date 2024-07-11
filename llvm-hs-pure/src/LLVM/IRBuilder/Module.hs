@@ -16,6 +16,7 @@ import Prelude hiding (and, or)
 import Control.Applicative
 import Control.Monad.Cont
 import Control.Monad.Except
+import Control.Monad.Fix
 import qualified Control.Monad.Fail as Fail
 import Control.Monad.Identity
 import Control.Monad.Writer.Lazy as Lazy
