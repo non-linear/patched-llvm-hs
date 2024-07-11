@@ -110,7 +110,7 @@ execModuleBuilderT :: Monad m => ModuleBuilderState -> ModuleBuilderT m a -> m [
 execModuleBuilderT s m = snd <$> runModuleBuilderT s m
 
 emitDefn :: MonadModuleBuilder m => Definition -> m ()
-emitDefn def = liftModuleState $ modify $ \s -> s { builderDefs = builderDefs s `snoc` def }
+emitDefn def = liftModuleState $ modify $ \s -> s { builderDefs = builderDefs s `LLVM.IRBuilder.Internal.SnocList.snoc` def }
 
 -- | A parameter name suggestion
 data ParameterName
