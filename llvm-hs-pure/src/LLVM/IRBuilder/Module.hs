@@ -17,7 +17,7 @@ import Control.Applicative
 import Control.Monad.Cont
 import Control.Monad.Except
 import Control.Monad.Fix
-import Control.Monad.MonadPlus
+import Control.Monad
 import qualified Control.Monad.Fail as Fail
 import Control.Monad.Identity
 import Control.Monad.Writer.Lazy as Lazy
