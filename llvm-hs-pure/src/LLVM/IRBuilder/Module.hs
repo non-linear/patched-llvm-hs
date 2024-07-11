@@ -121,7 +121,7 @@ data ParameterName
 -- | Using 'fromString` on non-ASCII strings will throw an error.
 instance IsString ParameterName where
   fromString s
-    | all isAscii s = ParameterName (fromString s)
+    | BS.all isAscii s = ParameterName (fromString s)
     | otherwise =
       error ("Only ASCII strings are automatically converted to LLVM parameter names. "
       <> "Other strings need to be encoded to a `ShortByteString` using an arbitrary encoding.")
