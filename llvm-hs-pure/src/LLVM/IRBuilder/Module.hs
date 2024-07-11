@@ -40,6 +40,7 @@ import Data.ByteString.Short as BS
 import Data.Char
 import Data.Data
 import Data.Foldable
+import Data.List
 import Data.Map.Lazy (Map)
 import qualified Data.Map.Lazy as Map
 import Data.String
